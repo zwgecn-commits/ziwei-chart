@@ -1,0 +1,11 @@
+# 金标数据隔离（铁律·勿删）：金标/用户数据为私有资产，严禁入库
+zw-tools/gold_cases*.jsonl
+paipan_eval*.json
+**/gold_cases*.jsonl
+**/*gold*.json
+**/*.db
+cases/
+cloud-sync/
+node_modules/
+*.bak*
+.DS_Store

@@ -1,0 +1,32 @@
+name: ci
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 16 * * 0"  # 每周日 00:00 (Asia/Shanghai) 全量回归
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - name: 金标隔离断言（检出树含金标文件名即红）
+        run: |
+          if find . -type f \( -name "gold_cases*.jsonl" -o -name "paipan_eval*.json" -o -name "*.db" \) | grep -q .; then
+            echo "❌ 检出树含金标/私有数据文件，禁止提交"; find . -type f \( -name "gold_cases*.jsonl" -o -name "paipan_eval*.json" -o -name "*.db" \); exit 1
+          fi
+          echo "✅ 金标隔离断言通过"
+      - name: 零遥测断言（源码禁网络模块）
+        run: |
+          if grep -nE "fetch\(|https?://[a-z]|net\.connect|child_process" ziwei_chart.js | grep -v "// " ; then
+            echo "❌ 源码含网络调用"; exit 1
+          fi
+          echo "✅ 零遥测断言通过"
+      - name: 语法+冒烟
+        run: |
+          node --check ziwei_chart.js
+          node ziwei_chart.js 1986 12 2 6 male | grep -q '"success": true' && echo "✅ 排盘冒烟通过"
+          node ziwei_chart.js 1986 12 2 6 male --day 2026-08-30 | grep -q '"liuri"' && echo "✅ 流日流时冒烟通过"

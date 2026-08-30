@@ -1,0 +1,39 @@
+{
+  "name": "@zwge/ziwei-chart",
+  "version": "0.1.0",
+  "description": "紫微斗数排盘引擎（文墨天机金标准对齐）— 十二宫/四化/自化/大限/流年/流月/流日/流时/小限全套，真太阳时校正",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "ziwei_chart.js",
+  "bin": {
+    "ziwei-chart": "ziwei_chart.js"
+  },
+  "files": [
+    "ziwei_chart.js",
+    "README.md",
+    "LICENSE",
+    "docs/"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "node --check ziwei_chart.js && node ziwei_chart.js 1986 12 2 6 male > /dev/null && echo SMOKE_OK"
+  },
+  "dependencies": {
+    "iztro": "^2.6.0",
+    "lunar-lite": "^0.2.8"
+  },
+  "keywords": [
+    "紫微斗数",
+    "ziwei",
+    "astrology",
+    "chinese-astrology",
+    "iztro"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
