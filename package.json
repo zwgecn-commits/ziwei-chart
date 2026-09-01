@@ -12,7 +12,8 @@
     "ziwei_chart.js",
     "README.md",
     "LICENSE",
-    "docs/"
+    "docs/",
+    "README.en.md"
   ],
   "engines": {
     "node": ">=16"
