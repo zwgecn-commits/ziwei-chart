@@ -1,0 +1,30 @@
+# NOTICE
+
+## 本仓库
+
+`ziwei-chart` — 紫微斗数排盘引擎（Node.js）。
+
+Copyright 2026 zwge.cn (https://zwge.cn)
+
+Licensed under the Apache License, Version 2.0 — see [LICENSE](./LICENSE).
+
+## 上游依存与署名
+
+本仓库算法层与下列上游项目交叉验证，并对其实证结果保持输出兼容。上游按其自身许可授权，与本仓库的 Apache-2.0 并存：
+
+| 项目 | 许可 | Copyright |
+|---|---|---|
+| [iztro](https://github.com/SylarLong/iztro) | MIT | Copyright (c) 2023 All Contributors |
+| [lunar-lite](https://github.com/SylarLong/lunar-lite) | MIT | 见其仓库 |
+
+> 修正层（文墨金标准对账修正、流月斗君法、流年神煞、月耀/小限/童限/流日流时等）为本项目原创，
+> 与上游为「交叉验证 + 增强」关系，非上游代码再分发。
+
+## 专利
+
+Apache-2.0 第 3 条：贡献者授予使用者专利许可；若使用者就本作品（或其贡献）向贡献者提起专利诉讼，
+其依第 3 条取得的专利许可自动终止。
+
+## 历史版本
+
+本仓库在此版本之前发布的版本依其发布时的 MIT 许可授权，**不因本文件而变更或追溯**。

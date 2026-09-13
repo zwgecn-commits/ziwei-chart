@@ -60,4 +60,9 @@ npm view @zwge/ziwei-chart dist.tarball  # 包内容仅 files 白名单
 
 ## License
 
-MIT · 算法源自 iztro（MIT）衍生，修正层为原创。
+**Apache-2.0**（自本版起）· 算法层与 iztro（MIT）交叉验证并对其输出结构兼容，修正层为原创。
+
+- 上游依存：**[iztro](https://github.com/SylarLong/iztro)**（MIT）与 `lunar-lite`；其 MIT 许可与本仓库的 Apache-2.0 并存，上游署名见 [NOTICE](./NOTICE)。
+- **本版之前**的历史版本依其发布时的 `LICENSE`（MIT）授权，**不追溯**。
+- 专利：Apache-2.0 第 3 条含专利许可与**专利报复条款**（对使用者提起专利诉讼即终止其专利许可）。
+

@@ -70,4 +70,12 @@ This library is a **validation & enhancement layer** for iztro (not a competitor
 
 ## License
 
-MIT · algorithms derived from iztro (MIT) + original correction layer.
+**Apache-2.0** (from this version on) · the algorithm layer cross-validates against iztro (MIT)
+while staying compatible with its output structure; the correction layer is original work.
+
+- Upstream: **[iztro](https://github.com/SylarLong/iztro)** (MIT) and `lunar-lite`; their MIT terms
+  coexist with this repository's Apache-2.0. Attribution is in [NOTICE](./NOTICE).
+- **Historical versions** prior to this one remain under the `LICENSE` (MIT) they shipped with — **not retroactive**.
+- Patents: Apache-2.0 §3 grants a patent license and includes a **patent retaliation clause**
+  (filing a patent suit against users terminates that patent license).
+
