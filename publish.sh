@@ -20,7 +20,7 @@ if grep -nE 'fetch\(|https?://|child_process' ziwei_chart.js | grep -qv '// '; t
   echo "❌ 源码含网络调用，禁止发布"; exit 1
 fi
 node --check ziwei_chart.js
-node ziwei_chart.js 1990 7 14 12 female | grep -q '"success": true'
+node ziwei_chart.js 1993 5 21 12 female | grep -q '"success": true'
 
 echo "==> 版本 bump"
 npm version "$BUMP" --no-git-tag-version

@@ -13,16 +13,16 @@ npm i @zwge/ziwei-chart
 
 ```bash
 # 命令行
-npx ziwei-chart 1990 7 14 12 male
+npx ziwei-chart 1993 5 21 12 male
 
 # 流日/流时盘（可选 --day）
-npx ziwei-chart 1990 7 14 12 male --day 2026-08-30
+npx ziwei-chart 1993 5 21 12 male --day 2026-08-30
 ```
 
 ```js
 // Node.js
 const { execSync } = require("child_process");
-const chart = JSON.parse(execSync(`node ${require.resolve("@zwge/ziwei-chart")} 1990 7 14 12 male`, { encoding: "utf8" }));
+const chart = JSON.parse(execSync(`node ${require.resolve("@zwge/ziwei-chart")} 1993 5 21 12 male`, { encoding: "utf8" }));
 console.log(chart.ming, chart.sihua, chart.daxianPalaceMap.length);
 ```
 
