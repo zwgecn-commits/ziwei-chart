@@ -1,26 +1,26 @@
 # Demo Output
 
-## CLI: `npx ziwei-chart 1990 7 14 12 male`
+## CLI: `npx ziwei-chart 1993 5 21 12 male`
 
 ```json
 {
   "success": true,
   "version": "2.10-horoscope-full",
-  "solar": "1990-07-14",
-  "lunar": "庚午 癸未 庚辰 壬午",
+  "solar": "1993-05-21",
+  "lunar": "癸酉 丁巳 壬寅 丙午",
   "gender": "男",
-  "ming": { "name": "命宫", "tg": "戊", "dz": "子" },
-  "wuxingJu": "火六局",
-  "soul": "贪狼",
-  "bodyStar": "火星",
-  "yearStem": "庚",
+  "ming": { "name": "命宫", "tg": "癸", "dz": "亥" },
+  "wuxingJu": "水二局",
+  "soul": "巨门",
+  "bodyStar": "天同",
+  "yearStem": "癸",
   "sihua": {
-    "禄": { "star": "太阳", "palace": "官禄" },
-    "权": { "star": "武曲", "palace": "田宅" },
-    "科": { "star": "太阴", "palace": "夫妻" },
-    "忌": { "star": "天同", "palace": "福德" }
+    "禄": { "star": "破军", "palace": "福德" },
+    "权": { "star": "巨门", "palace": "疾厄" },
+    "科": { "star": "太阴", "palace": "仆役" },
+    "忌": { "star": "贪狼", "palace": "迁移" }
   },
-  "laiyinPalace": "官禄",
+  "laiyinPalace": "命宫",
   "daxianPalaceMap": [ ... 144 entries ... ],
   "liunianPalaceMap": [ ... 1440 entries ... ],
   "fourLayerDieGong": [ ... ],
@@ -28,7 +28,7 @@
 }
 ```
 
-## With flow day: `npx ziwei-chart 1990 7 14 12 male --day 2026-08-30`
+## With flow day: `npx ziwei-chart 1993 5 21 12 male --day 2026-08-30`
 
 Adds `liuri` (flow day chart) + `dailHour` (flow hour) sections — full daily/hourly granularity.
 
