@@ -63,6 +63,11 @@ npm view @zwge/ziwei-chart dist.tarball  # package ships only the files whitelis
 
 This library is a **validation & enhancement layer** for iztro (not a competitor): it stays compatible with iztro output structure while providing Wenmo-golden-standard corrections (Xin-year Tiankui/Yue, flow-month Doujun method, yearly Decans, etc.). Cross-comparison methodology in docs/.
 
+## Related repositories
+
+- **[ziwei-pipeline](https://github.com/zwgecn-commits/ziwei-pipeline)** — deterministic-first AI analysis pipeline (chart → rules → reconciliation gate → report)
+- **[ziwei-skill](https://github.com/zwgecn-commits/ziwei-skill)** — Ziwei Doushu knowledge base for AI agents (`SKILL.md` + `references/`)
+
 ## License
 
 MIT · algorithms derived from iztro (MIT) + original correction layer.

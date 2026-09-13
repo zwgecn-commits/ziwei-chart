@@ -53,6 +53,11 @@ npm view @zwge/ziwei-chart dist.tarball  # 包内容仅 files 白名单
 
 本库定位为 iztro 的**校验增强层**（非竞品）：兼容 iztro 输出结构，提供文墨金标准口径修正（辛年天魁钺、流月斗君法、岁前神煞等）。交叉对比方法见 docs/。
 
+## 相关仓库
+
+- **[ziwei-pipeline](https://github.com/zwgecn-commits/ziwei-pipeline)** —— AI 分析管线（排盘 → 规则判定 → 对账闸门 → 六件套报告）
+- **[ziwei-skill](https://github.com/zwgecn-commits/ziwei-skill)** —— 紫微斗数技法知识底座（`SKILL.md` + `references/`，供 AI Agent 使用）
+
 ## License
 
 MIT · 算法源自 iztro（MIT）衍生，修正层为原创。
